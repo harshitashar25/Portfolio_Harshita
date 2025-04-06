@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -9,20 +8,20 @@ const Contact = () => {
     {
       icon: <Mail className="text-primary" size={24} />,
       title: 'Email',
-      value: 'john.doe@example.com',
-      link: 'mailto:john.doe@example.com'
+      value: '23cs2025@rgipt.ac.in',
+      link: 'mailto:23cs2025@rgipt.ac.in'
     },
     {
       icon: <Phone className="text-primary" size={24} />,
       title: 'Phone',
-      value: '+1 (123) 456-7890',
-      link: 'tel:+11234567890'
+      value: '8235147069',
+      link: 'tel:8235147069'
     },
     {
       icon: <MapPin className="text-primary" size={24} />,
       title: 'Location',
-      value: 'San Francisco, California',
-      link: 'https://maps.google.com/?q=San+Francisco'
+      value: 'Rajiv Gandhi Institute of Petroleum Technology',
+      link: 'https://maps.google.com/?q=Rajiv+Gandhi+Institute+of+Petroleum+Technology'
     }
   ];
 
@@ -30,12 +29,12 @@ const Contact = () => {
     {
       name: 'GitHub',
       icon: <Github size={20} />,
-      url: 'https://github.com/'
+      url: 'https://github.com/harshitashar25'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin size={20} />,
-      url: 'https://linkedin.com/'
+      url: 'https://www.linkedin.com/in/harshita-sharma-627446279/'
     },
     {
       name: 'Twitter',
@@ -58,7 +57,7 @@ const Contact = () => {
           <div className="lg:w-1/2">
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
-                <Card key={index} className="animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+                <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardContent className="p-6">
                     <a 
                       href={info.link} 
@@ -97,7 +96,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="lg:w-1/2 animate-fade-in" style={{animationDelay: '0.3s'}}>
+          <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">Send me a message</h3>
