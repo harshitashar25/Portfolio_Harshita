@@ -23,7 +23,7 @@ const Projects = () => {
       title: '🎙️ EMOTIVOX 2.0 - Voice Cloning Web Application',
       description: 'A web app for cloning voices using uploaded samples and converting text to speech using YourTTS, with ASR support for Hindi & English.',
       category: 'web',
-      image: '/placeholder.svg',
+      image: '/img1.png',
       technologies: ['React', 'Vite', 'Flask', 'YourTTS', 'Python'],
       liveLink: 'http://localhost:5173', // replace with actual live link if available
       githubLink: 'https://github.com/harshitashar25/Emotivox2.0',
