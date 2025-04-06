@@ -13,7 +13,6 @@ const Skills = () => {
         { name: 'JavaScript', proficiency: 85 },
         { name: 'TypeScript', proficiency: 80 },
         { name: 'HTML/CSS', proficiency: 95 },
-        { name: 'Redux', proficiency: 75 },
       ]
     },
     {
@@ -31,10 +30,10 @@ const Skills = () => {
       category: 'Database',
       icon: <Database className="text-primary" size={24} />,
       skills: [
-        { name: 'MongoDB', proficiency: 85 },
-        { name: 'PostgreSQL', proficiency: 80 },
+        { name: 'MongoDB', proficiency: 75 },
+        { name: 'PostgreSQL', proficiency: 50 },
         { name: 'MySQL', proficiency: 75 },
-        { name: 'Firebase', proficiency: 70 },
+        { name: 'Firebase', proficiency: 80 },
       ]
     },
     {
@@ -42,9 +41,9 @@ const Skills = () => {
       icon: <Code className="text-primary" size={24} />,
       skills: [
         { name: 'Data Structures', proficiency: 85 },
-        { name: 'Algorithms', proficiency: 80 },
-        { name: 'OOP', proficiency: 90 },
-        { name: 'Functional Programming', proficiency: 75 },
+        { name: 'Algorithms', proficiency: 70 },
+        { name: 'OOP', proficiency: 30 },
+        { name: 'Functional Programming', proficiency: 10 },
       ]
     },
     {
@@ -52,7 +51,6 @@ const Skills = () => {
       icon: <Brush className="text-primary" size={24} />,
       skills: [
         { name: 'Figma', proficiency: 80 },
-        { name: 'Adobe XD', proficiency: 75 },
         { name: 'UI/UX Design', proficiency: 85 },
         { name: 'Responsive Design', proficiency: 90 },
       ]
