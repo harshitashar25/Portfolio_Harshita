@@ -1,8 +1,10 @@
-#root {
+:root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #00171F; /* Rich Black for background */
+  color: #FFFFFF; /* White text for contrast */
 }
 
 .logo {
@@ -12,10 +14,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #003459); /* Prussian Blue glow */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #ADEBFF); /* Light blue glow for React */
 }
 
 @keyframes logo-spin {
@@ -35,8 +37,12 @@
 
 .card {
   padding: 2em;
+  background-color: #003459; /* Prussian Blue card background */
+  color: #FFFFFF; /* White text for readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 23, 31, 0.5); /* Subtle shadow */
 }
 
 .read-the-docs {
-  color: #888;
+  color: #ADEBFF; /* Light blue for subtle callout text */
 }
