@@ -33,7 +33,7 @@ const Projects = () => {
       title: '🤖 Chatbot - AI Assistant using Gemini',
       description: 'A smart AI chatbot with Gemini 1.5 Pro API, supporting both text and image queries, with a sleek chat interface and typing indicator.',
       category: 'web',
-      image: '/img2.svg',
+      image: '/img2.png',
       technologies: ['React', 'Vite', 'Gemini API', 'Node.js'],
       liveLink: 'https://aichatbot001.netlify.app/', // replace with actual live link if hosted
       githubLink: 'https://github.com/harshitashar25/AI_ChatBot',
