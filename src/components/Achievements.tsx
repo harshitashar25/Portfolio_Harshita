@@ -33,13 +33,6 @@ const Achievements = () => {
       icon: <Star className="text-primary" size={24} />
     },
     {
-      title: 'Machine Learning Research & Applications',
-      organization: 'Academic Projects',
-      year: '2023-2025',
-      description: 'Worked on real-world projects like solar energy estimation, Virtual Herbal Garden, and construction activity recognition using ML and computer vision.',
-      icon: <Award className="text-primary" size={24} />
-    },
-    {
       title: 'Open Source Contributor',
       organization: 'GitHub',
       year: 'Ongoing',
