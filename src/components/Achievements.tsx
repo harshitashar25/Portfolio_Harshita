@@ -7,7 +7,7 @@ const Achievements = () => {
     {
       title: 'Runner-Up – KodeCurrent Hackathon',
       organization: 'IEEE RGIPT & Prodigal AI',
-      year: '2024',
+      year: '2025',
       description:
         'Developed a generic text-to-speech generator with voice cloning using AI. Awarded runner-up position in a national-level competition.',
       icon: <Trophy style={{ color: '#ADEBFF' }} size={24} />,
@@ -39,7 +39,7 @@ const Achievements = () => {
     {
       title: 'Open Source Contributor',
       organization: 'GitHub',
-      year: 'Ongoing',
+      year: '2024',
       description:
         'Contributed to multiple frontend and AI-based repositories. Focused on enhancing accessibility and UI/UX components.',
       icon: <Star style={{ color: '#ADEBFF' }} size={24} />,
