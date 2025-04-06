@@ -4,79 +4,42 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link, Github, ExternalLink } from 'lucide-react';
 
+// ...previous imports remain unchanged
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
-  
+
   const categories = [
     { id: 'all', name: 'All Projects' },
     { id: 'web', name: 'Web Development' },
     { id: 'mobile', name: 'Mobile Apps' },
     { id: 'design', name: 'UI/UX Design' },
   ];
-  
+
   const projects = [
+    // Existing Projects...
+
     {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with product management, shopping cart, and payment integration.',
+      id: 7,
+      title: '🎙️ EMOTIVOX 2.0 - Voice Cloning Web Application',
+      description: 'A web app for cloning voices using uploaded samples and converting text to speech using YourTTS, with ASR support for Hindi & English.',
       category: 'web',
       image: '/placeholder.svg',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      liveLink: '#',
-      githubLink: '#',
+      technologies: ['React', 'Vite', 'Flask', 'YourTTS', 'Python'],
+      liveLink: 'http://localhost:5173', // replace with actual live link if available
+      githubLink: 'https://github.com/harshitashar25/Emotivox2.0',
     },
     {
-      id: 2,
-      title: 'Task Management App',
-      description: 'A productivity app to organize tasks with features like drag-and-drop, reminders, and team collaboration.',
+      id: 8,
+      title: '🤖 Chatbot - AI Assistant using Gemini',
+      description: 'A smart AI chatbot with Gemini 1.5 Pro API, supporting both text and image queries, with a sleek chat interface and typing indicator.',
       category: 'web',
       image: '/placeholder.svg',
-      technologies: ['React', 'Redux', 'Firebase'],
-      liveLink: '#',
-      githubLink: '#',
-    },
-    {
-      id: 3,
-      title: 'Fitness Tracking Mobile App',
-      description: 'A mobile application to track workouts, nutrition, and progress toward fitness goals.',
-      category: 'mobile',
-      image: '/placeholder.svg',
-      technologies: ['React Native', 'Redux', 'Firebase'],
-      liveLink: '#',
-      githubLink: '#',
-    },
-    {
-      id: 4,
-      title: 'Banking Dashboard UI',
-      description: 'A modern, accessible UI design for a banking dashboard with transaction analytics and financial planning tools.',
-      category: 'design',
-      image: '/placeholder.svg',
-      technologies: ['Figma', 'Adobe XD', 'Illustrator'],
-      liveLink: '#',
-      githubLink: '#',
-    },
-    {
-      id: 5,
-      title: 'Social Media Analytics',
-      description: 'A dashboard for social media managers to track engagement metrics and content performance.',
-      category: 'web',
-      image: '/placeholder.svg',
-      technologies: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
-      liveLink: '#',
-      githubLink: '#',
-    },
-    {
-      id: 6,
-      title: 'Restaurant Review App',
-      description: 'A mobile app for discovering and reviewing local restaurants with geolocation features.',
-      category: 'mobile',
-      image: '/placeholder.svg',
-      technologies: ['Flutter', 'Firebase', 'Google Maps API'],
-      liveLink: '#',
-      githubLink: '#',
+      technologies: ['React', 'Vite', 'Gemini API', 'Node.js'],
+      liveLink: 'http://localhost:5173', // replace with actual live link if hosted
+      githubLink: 'https://github.com/harshitashar25/AI_ChatBot',
     },
   ];
-  
+
   const filteredProjects = activeFilter === 'all' 
     ? projects 
     : projects.filter(project => project.category === activeFilter);
