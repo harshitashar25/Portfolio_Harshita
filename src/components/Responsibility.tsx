@@ -1,57 +1,32 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Users, Briefcase, User } from 'lucide-react';
+import { Users, Briefcase } from 'lucide-react';
 
 const Responsibility = () => {
   const responsibilities = [
     {
-      title: 'Technical Lead',
-      organization: 'Tech Solutions Inc.',
-      duration: '2022 - Present',
+      title: 'Event Management Team',
+      organization: 'Geeks for Geeks',
+      duration: 'Feb 2024 - Present',
       responsibilities: [
-        'Lead a team of 8 developers across multiple projects',
-        'Architect system designs and establish coding standards',
-        'Perform code reviews and mentor junior developers',
-        'Collaborate with product managers to define technical roadmaps'
+        'Coordinated and organized technical events and coding contests',
+        'Managed logistics and volunteer teams for seamless execution',
+        'Collaborated with sponsors and speakers for event participation',
+        'Contributed to promotional content and participant engagement'
       ],
       icon: <Users className="text-primary" size={24} />
     },
     {
-      title: 'Open Source Maintainer',
-      organization: 'React UI Components Library',
-      duration: '2020 - Present',
+      title: 'Co-Coordinator (PR, Outreach & Designing)',
+      organization: 'RGIPT Sports Council',
+      duration: 'Aug 2024 - Present',
       responsibilities: [
-        'Maintain a popular open-source UI component library with 10K+ stars on GitHub',
-        'Review and merge community contributions',
-        'Write comprehensive documentation and create examples',
-        'Ensure backward compatibility and accessibility compliance'
-      ],
-      icon: <User className="text-primary" size={24} />
-    },
-    {
-      title: 'Workshop Instructor',
-      organization: 'Tech Community Meetups',
-      duration: '2019 - Present',
-      responsibilities: [
-        'Conduct monthly workshops on web development technologies',
-        'Create curriculum and hands-on exercises for participants',
-        'Mentor beginner developers through coding challenges',
-        'Organize coding hackathons and community events'
+        'Led outreach efforts to increase sports participation across campus',
+        'Designed promotional material for inter- and intra-college events',
+        'Managed public relations and media coverage for sports events',
+        'Collaborated with student bodies and external organizations for smooth coordination'
       ],
       icon: <Briefcase className="text-primary" size={24} />
-    },
-    {
-      title: 'Technical Content Writer',
-      organization: 'Dev Hub Blog',
-      duration: '2018 - Present',
-      responsibilities: [
-        'Author in-depth technical articles on emerging technologies',
-        'Create coding tutorials with practical examples',
-        'Contribute to the developer education community',
-        'Review and edit technical content from other contributors'
-      ],
-      icon: <User className="text-primary" size={24} />
     }
   ];
 
@@ -67,7 +42,7 @@ const Responsibility = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {responsibilities.map((position, index) => (
-            <Card key={index} className="animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+            <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="mt-1 p-2 bg-primary/10 rounded-full">

@@ -22,13 +22,13 @@ const Footer = () => {
             <ArrowUp size={24} />
           </button>
           
-          <p className="text-lg font-semibold mb-2">John Doe</p>
+          <p className="text-lg font-semibold mb-2">Harshita Sharma</p>
           <p className="mb-4 text-sm">Full-Stack Developer & UI/UX Designer</p>
           
           <div className="w-20 h-px bg-white/40 mb-4"></div>
           
           <p className="text-center text-sm opacity-80">
-            © {new Date().getFullYear()} John Doe. All rights reserved.<br />
+            © {new Date().getFullYear()} Harshita Sharma. All rights reserved.<br />
             Made with passion & precision
           </p>
         </div>
