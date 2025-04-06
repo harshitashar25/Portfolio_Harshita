@@ -32,7 +32,7 @@ const Hero = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-400 to-blue-600"></div>
               <div className="absolute inset-4 bg-background rounded-full flex items-center justify-center">
                 <img 
-                  src="/img.svg"  // Replace this with your actual image path
+                  src="/img.jpeg"  // Replace this with your actual image path
                   alt="Harshita Sharma" 
                   className="w-full h-full object-cover rounded-full"
                 />
