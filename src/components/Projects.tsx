@@ -25,7 +25,7 @@ const Projects = () => {
       category: 'web',
       image: '/img1.png',
       technologies: ['React', 'Vite', 'Flask', 'YourTTS', 'Python'],
-      liveLink: 'http://localhost:5173', // replace with actual live link if available
+      liveLink: 'https://emotivox.netlify.app/', // replace with actual live link if available
       githubLink: 'https://github.com/harshitashar25/Emotivox2.0',
     },
     {
@@ -33,9 +33,9 @@ const Projects = () => {
       title: '🤖 Chatbot - AI Assistant using Gemini',
       description: 'A smart AI chatbot with Gemini 1.5 Pro API, supporting both text and image queries, with a sleek chat interface and typing indicator.',
       category: 'web',
-      image: '/placeholder.svg',
+      image: '/img2.svg',
       technologies: ['React', 'Vite', 'Gemini API', 'Node.js'],
-      liveLink: 'http://localhost:5173', // replace with actual live link if hosted
+      liveLink: 'https://aichatbot001.netlify.app/', // replace with actual live link if hosted
       githubLink: 'https://github.com/harshitashar25/AI_ChatBot',
     },
   ];
