@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
@@ -6,26 +5,12 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 const About = () => {
   const education = [
     {
-      degree: 'Master of Computer Science',
-      institution: 'Stanford University',
-      duration: '2020 - 2022',
-      location: 'California, USA',
-      description: 'Specialized in Artificial Intelligence and Human-Computer Interaction with a focus on creating intuitive user experiences.'
+      degree: 'Integrated Dual Degree In Computer Science',
+      institution: 'Rajiv Gandhi Institute Of Petroleum Technology',
+      duration: '2023 - 2028',
+      location: 'Amethi, Uttar Pradesh',
+      description: 'Pursuing B.Tech in Computer Science and M.Tech in Artificial Intelligence. Involved in diverse projects like AI-based emotion recognition, solar energy estimation portal, Virtual Herbal Garden, and construction activity monitoring using ML. Hackathon finalist and runner-up at multiple national events.'
     },
-    {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'Massachusetts Institute of Technology',
-      duration: '2016 - 2020',
-      location: 'Massachusetts, USA',
-      description: 'Graduated with honors. Focused on software engineering and data structures.'
-    },
-    {
-      degree: 'High School Diploma',
-      institution: 'Tech Preparatory School',
-      duration: '2012 - 2016',
-      location: 'New York, USA',
-      description: 'Graduated top of class with focus on mathematics and computer science.'
-    }
   ];
 
   return (
@@ -39,12 +24,12 @@ const About = () => {
             <h3 className="text-2xl font-semibold mb-4">Get to know me!</h3>
             <p className="mb-4">
               I'm a passionate Full-Stack Developer with expertise in creating responsive web applications 
-              and intuitive user interfaces. With over 5 years of experience in the field, I've worked on 
-              diverse projects ranging from e-commerce platforms to enterprise solutions.
+              and intuitive user interfaces. I enjoy blending creativity with technical know-how, working on 
+              projects that solve real-world problems in healthcare, education, and sustainability.
             </p>
             <p className="mb-4">
-              My approach combines technical excellence with creative problem-solving to deliver 
-              seamless digital experiences that meet business objectives while delighting users.
+              My portfolio includes work in AI-based emotion synthesis, solar power estimation, 
+              Virtual Reality for skill enhancement, and ML-powered construction progress tracking.
             </p>
             <p className="mb-4">
               When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
