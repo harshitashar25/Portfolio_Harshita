@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Award, Star, Trophy } from 'lucide-react';
@@ -6,47 +5,47 @@ import { Award, Star, Trophy } from 'lucide-react';
 const Achievements = () => {
   const achievements = [
     {
-      title: 'Best Web Application Award',
-      organization: 'Tech Innovation Summit 2023',
-      year: '2023',
-      description: 'Received recognition for developing an innovative healthcare management platform that improved patient care efficiency by 45%.',
+      title: 'Runner-Up – KodeCurrent Hackathon',
+      organization: 'IEEE RGIPT & Prodigal AI',
+      year: '2024',
+      description: 'Developed a generic text-to-speech generator with voice cloning using AI. Awarded runner-up position in a national-level competition.',
       icon: <Trophy className="text-primary" size={24} />
     },
     {
-      title: 'Open Source Contributor of the Year',
-      organization: 'GitHub Community Awards',
-      year: '2022',
-      description: 'Recognized for significant contributions to open source projects, including over 200 pull requests and maintaining 3 popular libraries.',
+      title: 'Top 5 Finalist – MNIT Jaipur Hackathon',
+      organization: 'MNIT Jaipur',
+      year: '2024',
+      description: 'Built "Vidyamitra" – a student support portal featuring notes, quizzes, and club events. Recognized as one of the top 5 teams.',
       icon: <Star className="text-primary" size={24} />
     },
     {
-      title: 'First Place Hackathon Winner',
-      organization: 'Global Code Fest',
-      year: '2021',
-      description: 'Led a team of 4 developers to create an AI-powered solution for environmental monitoring, beating 50+ international teams.',
+      title: 'Runner-Up – GeeksforGeeks Hackathon',
+      organization: 'RGIPT',
+      year: '2024',
+      description: 'Created an AI-based emotion synthesis system to bring emotional depth to generated speech.',
       icon: <Award className="text-primary" size={24} />
     },
     {
-      title: 'Published Research Paper',
-      organization: 'International Journal of Computer Science',
-      year: '2020',
-      description: 'Published a paper on "Efficient Algorithms for Real-time Data Processing in Edge Computing Environments".',
+      title: 'Semifinalist – Dark Patterns Buster Hackathon',
+      organization: 'Department of Consumer Affairs, GoI',
+      year: '2024',
+      description: 'Developed a browser extension that detects and blocks misleading online patterns. Made it to the semifinals.',
       icon: <Star className="text-primary" size={24} />
     },
     {
-      title: 'Full-Stack Developer Certification',
-      organization: 'Tech Academy',
-      year: '2019',
-      description: 'Completed an intensive 6-month program with distinction, mastering both front-end and back-end technologies.',
+      title: 'Machine Learning Research & Applications',
+      organization: 'Academic Projects',
+      year: '2023-2025',
+      description: 'Worked on real-world projects like solar energy estimation, Virtual Herbal Garden, and construction activity recognition using ML and computer vision.',
       icon: <Award className="text-primary" size={24} />
     },
     {
-      title: 'Dean\'s List',
-      organization: 'Stanford University',
-      year: '2018-2022',
-      description: 'Consistently maintained a GPA above 3.8 throughout the Master\'s program, earning a place on the Dean\'s List every semester.',
-      icon: <Trophy className="text-primary" size={24} />
-    }
+      title: 'Open Source Contributor',
+      organization: 'GitHub',
+      year: 'Ongoing',
+      description: 'Contributed to multiple frontend and AI-based repositories. Focused on enhancing accessibility and UI/UX components.',
+      icon: <Star className="text-primary" size={24} />
+    },
   ];
 
   return (
@@ -55,7 +54,7 @@ const Achievements = () => {
         <h2 className="text-3xl font-bold mb-2 text-center">Achievements & Awards</h2>
         <div className="w-20 h-1 bg-primary mx-auto mb-10"></div>
         <p className="text-center text-lg max-w-3xl mx-auto mb-12">
-          A collection of milestones and recognitions I've received throughout my academic and professional journey.
+          A collection of recognitions and accomplishments from my journey as a tech enthusiast, innovator, and student developer.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
