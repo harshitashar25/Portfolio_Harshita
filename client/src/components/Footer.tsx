@@ -10,23 +10,24 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#00171F] text-[#FFFFFF] py-8">
+    <footer className="bg-background text-foreground py-8 border-t border-border">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
           <button 
             onClick={scrollToTop}
-            className="p-3 bg-[#ADEBFF]/10 rounded-full mb-6 hover:bg-[#ADEBFF]/20 transition-colors"
+            className="p-3 bg-muted mb-6 hover:bg-accent transition-colors"
             aria-label="Scroll to top"
           >
-            <ArrowUp size={24} className="text-[#ADEBFF]" />
+            <ArrowUp size={24} className="text-primary" />
           </button>
 
-          <p className="text-lg font-semibold mb-2 text-[#ADEBFF]">Harshita Sharma</p>
-          <p className="mb-4 text-sm text-[#FFFFFF]">Full-Stack Developer & UI/UX Designer</p>
+          <p className="text-lg font-semibold mb-2 text-primary">Harshita Sharma</p>
+          <p className="mb-2 text-sm text-foreground">Software Engineer | Full-Stack Developer</p>
+          <p className="mb-4 text-xs text-foreground/60">IDD CSE @ RGIPT | SWE Intern @ Cryptique</p>
 
-          <div className="w-20 h-px bg-[#ADEBFF]/40 mb-4"></div>
+          <div className="w-20 h-px bg-border mb-4"></div>
 
-          <p className="text-center text-sm text-[#ADEBFF]/80">
+          <p className="text-center text-sm text-foreground/70">
             © {new Date().getFullYear()} Harshita Sharma. All rights reserved.<br />
             Made with passion & precision
           </p>

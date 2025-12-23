@@ -5,12 +5,31 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 const About = () => {
   const education = [
     {
-      degree: 'Integrated Dual Degree In Computer Science',
-      institution: 'Rajiv Gandhi Institute Of Petroleum Technology',
-      duration: '2023 - 2028',
-      location: 'Amethi, Uttar Pradesh',
+      degree: 'Integrated Dual Degree — Computer Science and Engineering',
+      institution: 'Rajiv Gandhi Institute of Petroleum Technology',
+      duration: '2023–28',
+      location: 'Jais, Amethi',
+      cgpa: 'CGPA: 8.36 / 10',
       description:
-        'Pursuing B.Tech in Computer Science and M.Tech in Artificial Intelligence. Involved in diverse projects like AI-based emotion recognition, solar energy estimation portal, Virtual Herbal Garden, and construction activity monitoring using ML. Hackathon finalist and runner-up at multiple national events.',
+        'Pursuing IDD in Computer Science with focus on full-stack development, AI/ML, blockchain, and distributed systems. Active in hackathons, open-source contributions, and technical leadership roles.',
+    },
+    {
+      degree: 'CBSE Board',
+      institution: 'DAV Public School',
+      duration: '2021–23',
+      location: 'Bist, Jamshedpur',
+      cgpa: 'Percent: 87.8%',
+      description:
+        'Completed higher secondary education with focus on science and mathematics.',
+    },
+    {
+      degree: 'CBSE Board',
+      institution: "St. Mary's English High School",
+      duration: '2009–21',
+      location: 'Jamshedpur',
+      cgpa: 'Percent: 93.4%',
+      description:
+        'Completed primary and secondary education with excellent academic performance.',
     },
   ];
 
@@ -27,21 +46,30 @@ const About = () => {
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="lg:w-1/2 animate-slide-in">
             <h3 className="text-2xl font-semibold mb-4" style={{ color: '#ADEBFF' }}>
-              Get to know me!
+              About Me
             </h3>
             <p className="mb-4">
-              I'm a passionate Full-Stack Developer with expertise in creating responsive web applications
-              and intuitive user interfaces. I enjoy blending creativity with technical know-how, working on
-              projects that solve real-world problems in healthcare, education, and sustainability.
+              I'm a Software Engineer and Full-Stack Developer currently working as a SWE Intern at Cryptique, 
+              building core product infrastructure including SDK backends, analytics systems, and Web3 integrations. 
+              Previously, I interned at Sheldon AI, developing MERN stack applications and AI-powered workflows.
             </p>
             <p className="mb-4">
-              My portfolio includes work in AI-based emotion synthesis, solar power estimation,
-              Virtual Reality for skill enhancement, and ML-powered construction progress tracking.
+              My technical expertise spans full-stack development (React, Node.js, MongoDB), blockchain technologies 
+              (Ethereum, R3 Corda), AI/ML (TensorFlow, RAG systems), and cloud infrastructure. I've built systems 
+              handling real-time fraud detection, AI-driven campus assistants, mentorship platforms, and voice cloning applications.
             </p>
             <p className="mb-4">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source
-              projects, or hiking in the mountains.
+              I'm passionate about solving complex technical challenges, optimizing system performance, and building 
+              scalable solutions. When I'm not coding, I contribute to open-source projects, participate in hackathons, 
+              and explore emerging technologies in Web3 and AI.
             </p>
+            <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: '#003459' }}>
+              <h4 className="text-lg font-semibold mb-2" style={{ color: '#ADEBFF' }}>Key Courses</h4>
+              <p className="text-sm text-white/90">
+                Data Structures & Algorithms, DBMS, Web Technology, Discrete Mathematics, Statistical Methods & Data Analysis, 
+                Operating Systems, Advance Algorithms, Artificial Intelligence, Theory Of Computation
+              </p>
+            </div>
           </div>
 
           <div className="lg:w-1/2 animate-slide-in" style={{ animationDelay: '0.2s' }}>
@@ -74,6 +102,11 @@ const About = () => {
                             <MapPin size={16} />
                             <span>{edu.location}</span>
                           </div>
+                          {edu.cgpa && (
+                            <div className="flex items-center gap-1" style={{ color: '#ADEBFF' }}>
+                              <span className="font-semibold">{edu.cgpa}</span>
+                            </div>
+                          )}
                         </div>
                         <p className="mt-2">{edu.description}</p>
                       </div>

@@ -4,10 +4,8 @@ import type { Config } from "tailwindcss";
 export default {
 	darkMode: ["class"],
 	content: [
-		"./pages/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./index.html",
+		"./src/**/*.{js,ts,jsx,tsx}",
 	],
 	prefix: "",
 	theme: {
@@ -65,9 +63,9 @@ export default {
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: '0',
+				md: '0',
+				sm: '0'
 			},
 			keyframes: {
 				'accordion-down': {
