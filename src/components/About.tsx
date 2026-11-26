@@ -1,125 +1,60 @@
-import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { GraduationCap, MapPin } from "lucide-react";
+import { philosophy, profile, stats } from "@/data/profile";
+import { Reveal, SectionHead } from "./Ui";
+import { Star, Squiggle } from "./Doodles";
 
-const About = () => {
-  const education = [
-    {
-      degree: 'Integrated Dual Degree — Computer Science and Engineering',
-      institution: 'Rajiv Gandhi Institute of Petroleum Technology',
-      duration: '2023–28',
-      location: 'Jais, Amethi',
-      cgpa: 'CGPA: 8.36 / 10',
-      description:
-        'Pursuing IDD in Computer Science with focus on full-stack development, AI/ML, blockchain, and distributed systems. Active in hackathons, open-source contributions, and technical leadership roles.',
-    },
-    {
-      degree: 'CBSE Board',
-      institution: 'DAV Public School',
-      duration: '2021–23',
-      location: 'Bist, Jamshedpur',
-      cgpa: 'Percent: 87.8%',
-      description:
-        'Completed higher secondary education with focus on science and mathematics.',
-    },
-    {
-      degree: 'CBSE Board',
-      institution: "St. Mary's English High School",
-      duration: '2009–21',
-      location: 'Jamshedpur',
-      cgpa: 'Percent: 93.4%',
-      description:
-        'Completed primary and secondary education with excellent academic performance.',
-    },
-  ];
-
+export default function About() {
   return (
-    <section
-      id="about"
-      className="py-20"
-      style={{ backgroundColor: '#00171F', color: '#FFFFFF' }} // Rich Black bg, white text
-    >
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-2 text-center">About Me</h2>
-        <div className="w-20 h-1 mx-auto mb-10" style={{ backgroundColor: '#ADEBFF' }}></div>
+    <section id="about" aria-labelledby="about-h" className="wrap relative py-24 sm:py-32">
+      <SectionHead id="about-h" eyebrow="01 · About">
+        From writing apps to <span className="scribble-underline">engineering</span> intelligent systems
+      </SectionHead>
 
-        <div className="flex flex-col lg:flex-row gap-10">
-          <div className="lg:w-1/2 animate-slide-in">
-            <h3 className="text-2xl font-semibold mb-4" style={{ color: '#ADEBFF' }}>
-              About Me
-            </h3>
-            <p className="mb-4">
-              I'm a Software Engineer and Full-Stack Developer currently working as a SWE Intern at Cryptique, 
-              building core product infrastructure including SDK backends, analytics systems, and Web3 integrations. 
-              Previously, I interned at Sheldon AI, developing MERN stack applications and AI-powered workflows.
+      <div className="grid gap-6 lg:grid-cols-12">
+        <Reveal className="lg:col-span-7">
+          <div className="card h-full p-7 sm:p-10">
+            <p className="font-display text-2xl font-bold leading-snug sm:text-3xl">
+              I started as a general software developer and kept getting pulled toward the hard part: making AI systems <em className="not-italic text-lilac-deep">reliable</em>.
             </p>
-            <p className="mb-4">
-              My technical expertise spans full-stack development (React, Node.js, MongoDB), blockchain technologies 
-              (Ethereum, R3 Corda), AI/ML (TensorFlow, RAG systems), and cloud infrastructure. I've built systems 
-              handling real-time fraud detection, AI-driven campus assistants, mentorship platforms, and voice cloning applications.
+            <p className="mt-5 text-lg leading-relaxed text-ink-soft">{profile.summary}</p>
+            <p className="mt-4 text-lg leading-relaxed text-ink-soft">
+              Across three internships I've shipped Python/FastAPI and Node.js services, designed SQL schemas, built retrieval and ranking with embeddings, and put humans, validators and audit trails around LLM output.
+              Outside work I build agents of my own — a supervisor-based workflow platform and a native macOS assistant that asks before it acts.
             </p>
-            <p className="mb-4">
-              I'm passionate about solving complex technical challenges, optimizing system performance, and building 
-              scalable solutions. When I'm not coding, I contribute to open-source projects, participate in hackathons, 
-              and explore emerging technologies in Web3 and AI.
-            </p>
-            <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: '#003459' }}>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: '#ADEBFF' }}>Key Courses</h4>
-              <p className="text-sm text-white/90">
-                Data Structures & Algorithms, DBMS, Web Technology, Discrete Mathematics, Statistical Methods & Data Analysis, 
-                Operating Systems, Advance Algorithms, Artificial Intelligence, Theory Of Computation
-              </p>
+            <div className="mt-7 grid gap-3 sm:grid-cols-2">
+              <div className="flex gap-3 rounded-2xl border-2 border-ink bg-lav p-4"><GraduationCap className="mt-0.5 shrink-0" aria-hidden />
+                <div><p className="font-display font-bold">{profile.education.institute}</p><p className="text-sm text-ink-soft">B.Tech + M.Tech, CSE · CGPA {profile.education.cgpa} · {profile.education.period}</p></div></div>
+              <div className="flex gap-3 rounded-2xl border-2 border-ink bg-lav p-4"><MapPin className="mt-0.5 shrink-0" aria-hidden />
+                <div><p className="font-display font-bold">{profile.location}</p><p className="text-sm text-ink-soft">Open to AI Engineering & Software Engineering roles</p></div></div>
             </div>
           </div>
+        </Reveal>
 
-          <div className="lg:w-1/2 animate-slide-in" style={{ animationDelay: '0.2s' }}>
-            <h3 className="text-2xl font-semibold mb-4" style={{ color: '#ADEBFF' }}>
-              Education
-            </h3>
-            <div className="space-y-4">
-              {education.map((edu, index) => (
-                <Card
-                  key={index}
-                  className="overflow-hidden border-l-4"
-                  style={{ borderColor: '#ADEBFF', backgroundColor: '#003459', color: '#FFFFFF' }}
-                >
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="mt-1 p-2 rounded-full" style={{ backgroundColor: '#ADEBFF22' }}>
-                        <GraduationCap style={{ color: '#ADEBFF' }} size={24} />
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-semibold">{edu.degree}</h4>
-                        <p className="text-lg font-medium" style={{ color: '#FFFFFFB3' }}>
-                          {edu.institution}
-                        </p>
-                        <div className="flex flex-wrap gap-4 mt-2 text-sm" style={{ color: '#FFFFFFB3' }}>
-                          <div className="flex items-center gap-1">
-                            <Calendar size={16} />
-                            <span>{edu.duration}</span>
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <MapPin size={16} />
-                            <span>{edu.location}</span>
-                          </div>
-                          {edu.cgpa && (
-                            <div className="flex items-center gap-1" style={{ color: '#ADEBFF' }}>
-                              <span className="font-semibold">{edu.cgpa}</span>
-                            </div>
-                          )}
-                        </div>
-                        <p className="mt-2">{edu.description}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:col-span-5">
+          {stats.map((s, i) => (
+            <Reveal key={s.label} delay={i * 0.07}>
+              <div className={`card h-full p-5 ${["bg-sun", "bg-lilac", "bg-white", "bg-sun"][i]} ${i % 2 ? "sm:translate-y-4" : ""}`}>
+                <p className="font-display text-5xl font-bold tracking-tight">{s.value}</p>
+                <p className="mt-2 text-sm font-semibold leading-snug">{s.label}</p>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
+
+      <div className="relative mt-16 grid gap-5 md:grid-cols-3">
+        <Star className="absolute -top-8 right-6 hidden w-10 animate-wiggle md:block" />
+        {philosophy.map((p, i) => (
+          <Reveal key={p.title} delay={i * 0.08}>
+            <article className="h-full rounded-3xl border-2 border-dashed border-ink p-6">
+              <span className="font-display text-sm font-bold text-lilac-deep">0{i + 1}</span>
+              <h3 className="mt-1 font-display text-xl font-bold leading-tight">{p.title}</h3>
+              <p className="mt-2 text-ink-soft">{p.body}</p>
+            </article>
+          </Reveal>
+        ))}
+      </div>
+      <Squiggle className="mx-auto mt-12 w-40" />
     </section>
   );
-};
-
-export default About;
+}
